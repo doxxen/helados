@@ -8,11 +8,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< Updated upstream
+=======
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@geist-ui/core": "^2.3.8",
+>>>>>>> Stashed changes
     "google-spreadsheet": "^3.2.0",
     "googleapis": "^94.0.0",
     "next": "12.0.10",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-select": "^5.8.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.4.0",
