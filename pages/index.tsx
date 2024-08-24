@@ -32,12 +32,6 @@ const Home: NextPage = () => {
         e.preventDefault();
 
         let form = {
-<<<<<<< Updated upstream
-            name,
-            email,
-            phone,
-            message
-=======
             nombre,
             medida,
             sabor,
@@ -47,7 +41,6 @@ const Home: NextPage = () => {
             message,
             sabores: saboresSeleccionados.map(sabor => sabor.value).join(', ')
 
->>>>>>> Stashed changes
         }
 
         const rawResponse = await fetch('/api/submit', {
@@ -64,12 +57,6 @@ const Home: NextPage = () => {
         alert(content.data.tableRange)
 
         // Reset the form fields
-<<<<<<< Updated upstream
-        setMessage('')
-        setPhone('')
-        setName('')
-        setEmail('')
-=======
         setNombre('')
         setMedida('')
         setCelular('')
@@ -77,29 +64,21 @@ const Home: NextPage = () => {
         setMessage('')
         setSaboresSeleccionados([])
 
->>>>>>> Stashed changes
     }
 
     return (
         <main className="bg-gray-100 min-h-screen">
             <div className="max-w-5xl mx-auto py-16">
                 <form className="py-4 space-y-4" onSubmit={handleSubmit}>
-<<<<<<< Updated upstream
-=======
                 <div className="flex flex-col items-center justify-center space-y-2">
                         <FontAwesomeIcon icon={faIceCream} className="text-4xl text-indigo-600" />
                         <h2 className="text-2xl font-bold text-center text-indigo-600">Heladeria</h2>
                     </div>
->>>>>>> Stashed changes
                     <div className="flex items-center justify-center">
                         <label htmlFor="name" className="sr-only">Name</label>
                         <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Name" />
                     </div>
                     <div className="flex items-center justify-center">
-<<<<<<< Updated upstream
-                        <label htmlFor="email" className="sr-only">Email</label>
-                        <input value={email} onChange={e => setEmail(e.target.value)} type="email" name="email" id="email" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Email" />
-=======
                         <label htmlFor="medida" className="sr-only">Medida</label>
                         <select 
                         required 
@@ -127,14 +106,9 @@ const Home: NextPage = () => {
                             isSearchable={false}
                         />
 
->>>>>>> Stashed changes
                     </div>
         
                     <div className="flex items-center justify-center">
-<<<<<<< Updated upstream
-                        <label htmlFor="phone" className="sr-only">Phone</label>
-                        <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Phone" />
-=======
                         <label htmlFor="celular" className="sr-only">Celular</label>
                         <input required value={celular} onChange={e => setCelular(e.target.value)} type="number" name="celular" id="celular" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Celular" />
                     </div>
@@ -149,7 +123,6 @@ const Home: NextPage = () => {
                             <option value="efectivo">Efectivo</option>
                             <option value="transferencia">Transferencia</option>
                         </select>
->>>>>>> Stashed changes
                     </div>
                     <div className="flex items-center justify-center">
                         <label htmlFor="message" className="sr-only">Message</label>

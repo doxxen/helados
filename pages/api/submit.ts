@@ -2,18 +2,12 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import {google} from "googleapis";
 
 type SheetForm = {
-<<<<<<< Updated upstream
-    name: string
-    email: string
-    phone: string
-=======
     nombre: string
     medida: string
     sabores: string
     celular: string
     direccion: string
     medio_pago: string
->>>>>>> Stashed changes
     message: string
 }
 
@@ -51,11 +45,7 @@ export default async function handler(
             valueInputOption: 'USER_ENTERED',
             requestBody: {
                 values: [
-<<<<<<< Updated upstream
-                    [body.name, body.email, body.phone, body.message]
-=======
                     [body.nombre, body.medida, body.sabores, body.celular, body.direccion, body.medio_pago, body.message]
->>>>>>> Stashed changes
                 ]
             }
         });
