@@ -5,9 +5,9 @@ import { faIceCream } from '@fortawesome/free-solid-svg-icons';
 import Select from 'react-select';
 
 const Home: NextPage = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
+    const [nombre, setNombre] = useState('');
+    const [medida, setMedida] = useState('');
+    const [celular, setCelular] = useState('');
     const [message, setMessage] = useState('');
     const [direccion, setDireccion] = useState('');
     const [medio_pago, setMedio_pago] = useState('');
@@ -75,8 +75,8 @@ const Home: NextPage = () => {
                         <h2 className="text-2xl font-bold text-center text-indigo-600">Heladeria</h2>
                     </div>
                     <div className="flex items-center justify-center">
-                        <label htmlFor="name" className="sr-only">Name</label>
-                        <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Name" />
+                        <label htmlFor="nombre" className="sr-only">Nombre</label>
+                        <input value={nombre} onChange={e => setNombre(e.target.value)} type="text" name="nombre" id="nombre" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Tu nombre" />
                     </div>
                     <div className="flex items-center justify-center">
                         <label htmlFor="medida" className="sr-only">Medida</label>
